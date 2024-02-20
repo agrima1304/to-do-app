@@ -29,7 +29,7 @@ function Checkbox({ text }: Props) {
         </label>
       )}
       {!isChecked && !alertVisible && (
-        <div role="alert" className="alert alert-success">
+        <div role="alert" className="alert alert-success justify-self-center">
           <div>
             <span>Well done on completing the task!</span>
           </div>
@@ -57,8 +57,5 @@ function Checkbox({ text }: Props) {
 export default Checkbox;
 
 /* 
-<div role="alert" className="alert alert-error">
-  
-  <span>Error! Task failed successfully.</span>
-</div>
+
 */
