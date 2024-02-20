@@ -21,16 +21,18 @@ function AddItem() {
       <ul>
         {items.map((item, index) => index > 0 && <Item text={item}></Item>)}
       </ul>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Enter item..."
-        className="input input-bordered input-primary w-full max-w-xs"
-      />
-      <button className="btn btn-outline btn-primary" onClick={handleAddItem}>
-        Add Item
-      </button>
+      <div className="fixed bottom-10 left-0 right-0">
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Enter item..."
+          className="input input-bordered input-primary w-full max-w-xs"
+        />
+        <button className="btn btn-outline btn-primary" onClick={handleAddItem}>
+          Add Item
+        </button>
+      </div>
     </div>
   );
 }
