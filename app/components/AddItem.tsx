@@ -1,15 +1,26 @@
+"use client";
 import React, { useState } from "react";
 import Item from "./Item";
 import NewList from "./NewList";
 
+/*
+This component ties everything together and is used to get input
+from the user, which is then passed to the next component to be processed.
+*/
 function AddItem() {
-  const [items, setItems] = useState([[""]]);
+  // inputValue and setInputValue are used to hold the data that is input and alter it.
   const [inputValue, setInputValue] = useState("");
 
+  // changes inputValue as it is being entered in the input box.
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
 
+  /* 
+  dividing the page into three columns and using the NewList component to create 
+  multiple lists with different titles using Props. The user input is passed to 
+  each, but is appened only to the list where the user wants to add that task.
+  */
   return (
     <div>
       <div className="grid justify-items-stretch grid-cols-3 ">

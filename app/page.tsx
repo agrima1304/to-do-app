@@ -1,8 +1,11 @@
-"use client";
 import React from "react";
 import Item from "./components/Item";
 import AddItem from "./components/AddItem";
 
+/*
+This is the file for the home page of the website. 
+At the top, I have the title and then my main component.
+*/
 export default function Home() {
   return (
     <>
