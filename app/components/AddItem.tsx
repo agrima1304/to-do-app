@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Item from "./Item";
+
 import NewList from "./NewList";
 
 /*
@@ -8,7 +8,7 @@ This component ties everything together and is used to get input
 from the user, which is then passed to the next component to be processed.
 */
 function AddItem() {
-  // inputValue and setInputValue are used to hold the data that is input and alter it.
+  // inputValue stores the data that is entered in the textbox.
   const [inputValue, setInputValue] = useState("");
 
   // changes inputValue as it is being entered in the input box.
