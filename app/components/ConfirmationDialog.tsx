@@ -28,18 +28,20 @@ function ConfirmationDialogue({ isChecked, text }: Props) {
           <div className="bg-white p-4 rounded shadow-md">
             <h2 className="text-lg font-semibold mb-2">Are you sure?</h2>
             <p>Are you sure you want to remove this task?</p>
-            <button
-              className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
-              onClick={handleConfirmation}
-            >
-              Yes
-            </button>
-            <button
-              className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
-              onClick={handleCancel}
-            >
-              No
-            </button>
+            <div className="grid justify-items-center grid-cols-2">
+              <button
+                className="btn btn-outline btn-success"
+                onClick={handleConfirmation}
+              >
+                Yes
+              </button>
+              <button
+                className="btn btn-outline btn-error"
+                onClick={handleCancel}
+              >
+                No
+              </button>
+            </div>
           </div>
         </div>
       )}
