@@ -2,6 +2,9 @@
 import React from "react";
 import { useState } from "react";
 
+/*
+This is the code used for the success alert shown when the user finishes a task.
+*/
 const SuccessAlert = () => {
   const [isVisible, setAlertVisibility] = useState(true);
 

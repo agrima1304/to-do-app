@@ -14,21 +14,15 @@ interface Props {
 
 function Checkbox({ text }: Props) {
   // isChecked indicates if checkbox is checked
-  // alertVisible indicates if the alert is being rendered
   const [isChecked, setIsChecked] = useState(false);
-  const [isConfirmed, setConfirmation] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
 
-  const handleClose = () => {
-    setConfirmation(!isConfirmed);
-  };
-
   /*
    using a conditional ternary operator to render the task if checkbox not 
-   checked, and render the alert if it is checked.
+   checked, and render the confirmation dialog if it is checked.
   */
   return (
     <div>
