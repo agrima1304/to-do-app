@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
-import NewList from "./NewList";
+import AddCategory from "./AddCategory";
 
 /*
 This component ties everything together and is used to get input
@@ -23,17 +22,7 @@ function AddItem() {
   */
   return (
     <div>
-      <div className="grid justify-items-stretch grid-cols-3 ">
-        <div className="justify-self-center">
-          <NewList newTask={inputValue} Title="School" />
-        </div>
-        <div className="justify-self-center">
-          <NewList newTask={inputValue} Title="Home" />
-        </div>
-        <div className="justify-self-center">
-          <NewList newTask={inputValue} Title="General" />
-        </div>
-      </div>
+      <AddCategory newTask={inputValue}></AddCategory>
       <div className="absolute inset-x-0 bottom-0 pb-7">
         <input
           type="text"
